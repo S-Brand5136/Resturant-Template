@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
 import Sitenav from "../components/Sitenav";
 import styles from "../styles/Home.module.css";
+import ImageCarousel from "../components/ImageCarousel";
 
 // React-bootstrap
 import { Container, Col, Row } from "react-bootstrap";
@@ -9,15 +9,15 @@ import { Container, Col, Row } from "react-bootstrap";
 export default function Home() {
   return (
     <Container fluid>
+      <Row className="justify-content-center">
+        <Col xs={12}>
+          <ImageCarousel />
+        </Col>
+      </Row>
       <Row>
         <Col xs={12} md={6}>
-          <Image
-            src="../images/hamburger"
-            alt="Picture of Menu Item"
-            layout="fill"
-          />
+          <div>Hello</div>
         </Col>
-        <Col xs={12} md={6}></Col>
       </Row>
     </Container>
   );

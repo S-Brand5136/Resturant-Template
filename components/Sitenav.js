@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Sitenav() {
   return (
-    <Navbar expand="lg" className="border-bottom p-3">
+    <Navbar expand="lg" className="border-bottom p-3 mb-2">
       <div className="container">
         <Link href="/">
           <Navbar.Brand as="a" href="/">
